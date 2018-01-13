@@ -1,11 +1,6 @@
 // react
 import React, { Component } from 'react';
 
-// redux
-import { bindActionCreators } from 'redux';
-import { connect } from 'react-redux';
-import * as counterActions from './actions/counting';
-
 // utils
 import Config from './utils/config';
 import * as Request from './utils/request';
@@ -14,8 +9,6 @@ import * as Request from './utils/request';
 import './App.css';
 
 // componants
-import Counter from './components/Counter';
-
 
 class App extends Component {
 
@@ -33,22 +26,10 @@ class App extends Component {
     render() {
         return (
             <div>
-                <Counter />
+                Hello
             </div>
         );
     }
 }
 
-function mapStateToProps(state, props) {
-    return {
-        count: state.count
-    };
-}
-
-function mapDispatchToProps(dispatch) {
-    return {
-        actions: bindActionCreators(counterActions, dispatch)
-    }
-}
-
-export default connect(mapStateToProps, mapDispatchToProps)(App);
+export default App;
