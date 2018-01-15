@@ -1,0 +1,12 @@
+.block {
+    background: $white;
+    padding: 5px;
+    margin-bottom: 10px;
+
+    &__title {
+        font-weight: 800;
+        font-size: 80px;
+        padding-left: 30px;
+        letter-spacing: 5px;
+    }
+}

@@ -1,0 +1,27 @@
+.weather-item {
+    margin: 20px 0;
+
+    &__temp {
+        font-size: 30px;
+        color: $light-grey;
+    }
+
+    &__icon {
+        margin: 15px 0 25px 0;
+
+        &:before {
+            font-size: 45px;
+            color: $dark-grey;
+        }
+    }
+
+    &__time {
+        font-size: 30px;
+        margin-bottom: 0;
+        color: $light-grey;
+
+        span {
+            font-size: 20px;
+        }
+    }
+}

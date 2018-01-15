@@ -1,20 +1,17 @@
 import React, { Component } from 'react';
 
-import Tile from './Tile';
-
 class Forecast extends Component {
-    constructor(props) {
-        super(props);
-        console.log(this.props);
-    }
-
     createBlocks() {
         return Object.keys(this.props.weather).map((day, index) => {
             return (
                 <div key={index}>
-                    <div>{this.createNameBlock(day)}</div>
-                    <div>
-                        {this.createWeatherBlock(this.props.weather[day])}
+                    <div className="block">
+                        <div className="row">{this.createNameBlock(day)}</div>
+                    </div>
+                    <div className="block">
+                        <div className="row justify-content-end">
+                            {this.createWeatherBlock(this.props.weather[day])}
+                        </div>
                     </div>
                 </div>
             );
@@ -22,24 +19,30 @@ class Forecast extends Component {
     }
 
     createNameBlock(day) {
-        return <h2>{day}</h2>;
+        return <h2 className="block__title text-uppercase mb-0">{day}</h2>;
     }
 
     createWeatherBlock(weather) {
         return weather.map((item, index) => {
             return (
-                <div key={index}>
-                    <p>{item.temp}</p>
-                    <p>{item.code}</p>
-                    <p>{item.time}</p>
+                <div key={index} className="col col-8 text-center weather-item">
+                    <p className="weather-item__temp">{item.temp}ºc</p>
+                    <i
+                        className={`wi wi-owm-day-${item.code} weather-item__icon`}
+                    />
+                    <div className="weather-item__time text-lowercase">
+                        {item.time}
+                        <span>{item.meridiem}</span>
+                    </div>
                 </div>
             );
         });
     }
 
     render() {
+        console.log(this.props);
         return (
-            <div>
+            <div className="container forecast">
                 <div>{this.createBlocks()}</div>
             </div>
         );

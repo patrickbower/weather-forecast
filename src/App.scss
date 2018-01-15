@@ -1,2 +1,15 @@
-@import 'styles/_colors.scss'; // assuming a styles directory under src/
-// @import 'nprogress/nprogress'; // importing a css file from the nprogress node module
+// lib
+@import './node_modules/bootstrap/scss/bootstrap';
+
+// lib extends
+@import 'styles/_grid';
+
+// base
+@import 'styles/_base';
+@import 'styles/_colors';
+
+// components
+@import 'styles/_blocks';
+@import 'styles/_weather-item';
+@import 'styles/_location';
+@import 'styles/_forecast';

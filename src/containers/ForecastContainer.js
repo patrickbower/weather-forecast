@@ -7,13 +7,17 @@ class ForecastContainer extends Component {
     getWeatherByDay() {
         let daysObj = [];
 
-        this.props.data.list.forEach(item => {
+        this.props.data.list.forEach((item, index) => {
             const day = moment(item.dt * 1000).format('dddd');
             const weather = {
-                time: moment(item.dt * 1000).format('hA'),
+                time: moment(item.dt * 1000).format('h'),
+                meridiem: moment(item.dt * 1000).format('A'),
                 temp: Math.round(item.main.temp),
                 code: item.weather[0].id
             };
+
+            const current = index === 0 ? true : false;
+            if (current) weather.isCurrent = true;
 
             if (!daysObj[day]) daysObj[day] = [];
             daysObj[day].push(weather);
@@ -22,20 +26,8 @@ class ForecastContainer extends Component {
         return daysObj;
     }
 
-    getLocation() {
-        return {
-            location: this.props.data.city.name,
-            country: this.props.data.city.country
-        };
-    }
-
     render() {
-        return (
-            <Forecast
-                weather={this.getWeatherByDay()}
-                location={this.getLocation()}
-            />
-        );
+        return <Forecast weather={this.getWeatherByDay()} />;
     }
 }
 
