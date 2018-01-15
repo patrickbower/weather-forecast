@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import LocationContainer from './LocationContainer';
+
 class BackgroundContainer extends Component {
     constructor(props) {
         super(props);
@@ -49,7 +51,13 @@ class BackgroundContainer extends Component {
             document.body.classList.add(
                 `theme--${this.state.currentWeatherType}`
             );
-        return false;
+        return (
+            <LocationContainer
+                currentWeatherType={this.state.currentWeatherType}
+                currentWeatherId={this.state.currentWeatherId}
+                data={this.props.data}
+            />
+        );
     }
 }
 

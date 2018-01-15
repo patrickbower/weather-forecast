@@ -6009,7 +6009,7 @@ a.text-dark:focus, a.text-dark:hover {
 body {
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
-  padding: 20px;
+  padding: 0 20px 20px 20px;
   background: #999; }
 
 .block {
@@ -6064,11 +6064,31 @@ body {
         font-size: 20px; } }
 
 .location {
-  text-align: right;
-  margin: 30px 0 50px; }
+  text-align: center;
+  margin-bottom: 20px; }
   .location__heading {
     font-weight: 300;
-    letter-spacing: 10px; }
+    letter-spacing: 10px;
+    transform: translateY(60px); }
+  .location__icon {
+    color: #ffffff;
+    font-size: 80px;
+    opacity: 0.1; }
+
+@media only screen and (min-width: 992px) {
+  .location {
+    text-align: right;
+    position: relative;
+    padding-top: 20px;
+    margin-bottom: 50px; }
+    .location__heading {
+      font-weight: 300;
+      letter-spacing: 10px;
+      transform: translateY(100px); }
+    .location__icon {
+      color: #ffffff;
+      font-size: 160px;
+      opacity: 0.1; } }
 
 @media only screen and (min-width: 992px) {
   .forecast {
@@ -6076,46 +6096,46 @@ body {
     margin-left: 0; } }
 
 .theme--thunderstorm {
-  background: linear-gradient(left bottom, #f1e767 0%, #01074a 100%); }
+  background: linear-gradient(to left bottom, #01074a 0%, #f1e767 100%); }
   .theme--thunderstorm .block__title {
     color: #01074a; }
 
 .theme--drizzle {
-  background: linear-gradient(left bottom, #9fc4e6 0%, #005dba 100%); }
+  background: linear-gradient(to left bottom, #005dba 0%, #9fc4e6 100%); }
   .theme--drizzle .block__title {
     color: #005dba; }
 
 .theme--rain {
-  background: linear-gradient(left bottom, #499bea 0%, #003369 100%); }
+  background: linear-gradient(to left bottom, #003369 0%, #499bea 100%); }
   .theme--rain .block__title {
     color: #003369; }
 
 .theme--snow {
-  background: linear-gradient(left bottom, #fefefe 0%, #e2e2e2 100%); }
+  background: linear-gradient(to left bottom, #e2e2e2 0%, #fefefe 100%); }
   .theme--snow .block__title {
     color: #e2e2e2; }
 
 .theme--atmosphere {
-  background: linear-gradient(left bottom, #93cede 0%, #29758a 100%); }
+  background: linear-gradient(to left bottom, #29758a 0%, #93cede 100%); }
   .theme--atmosphere .block__title {
     color: #29758a; }
 
 .theme--clear {
-  background: linear-gradient(left bottom, #f7ff00 0%, #207ce5 100%); }
+  background: linear-gradient(to left bottom, #207ce5 0%, #f7ff00 100%); }
   .theme--clear .block__title {
     color: #207ce5; }
 
 .theme--clouds {
-  background: linear-gradient(left bottom, #e2e2e2 0%, #314363 100%); }
+  background: linear-gradient(to left bottom, #314363 0%, #e2e2e2 100%); }
   .theme--clouds .block__title {
     color: #314363; }
 
 .theme--extreame {
-  background: linear-gradient(left bottom, #000000 0%, #ff0000 100%); }
+  background: linear-gradient(to left bottom, #ff0000 0%, #000000 100%); }
   .theme--extreame .block__title {
     color: #ff0000; }
 
 .theme--additional {
-  background: linear-gradient(left bottom, #636363 0%, #d1d1d1 100%); }
+  background: linear-gradient(to left bottom, #d1d1d1 0%, #636363 100%); }
   .theme--additional .block__title {
     color: #d1d1d1; }

@@ -10,6 +10,10 @@ class LocationContainer extends Component {
                     {`${this.props.data.city.name},
                         ${this.props.data.city.country}`}
                 </h1>
+                <i
+                    className={`wi wi-owm-day-${this.props
+                        .currentWeatherId} location__icon`}
+                />
             </div>
         );
     }
