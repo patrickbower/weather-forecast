@@ -6074,3 +6074,48 @@ body {
   .forecast {
     margin-right: initial;
     margin-left: 0; } }
+
+.theme--thunderstorm {
+  background: linear-gradient(left bottom, #f1e767 0%, #01074a 100%); }
+  .theme--thunderstorm .block__title {
+    color: #01074a; }
+
+.theme--drizzle {
+  background: linear-gradient(left bottom, #9fc4e6 0%, #005dba 100%); }
+  .theme--drizzle .block__title {
+    color: #005dba; }
+
+.theme--rain {
+  background: linear-gradient(left bottom, #499bea 0%, #003369 100%); }
+  .theme--rain .block__title {
+    color: #003369; }
+
+.theme--snow {
+  background: linear-gradient(left bottom, #fefefe 0%, #e2e2e2 100%); }
+  .theme--snow .block__title {
+    color: #e2e2e2; }
+
+.theme--atmosphere {
+  background: linear-gradient(left bottom, #93cede 0%, #29758a 100%); }
+  .theme--atmosphere .block__title {
+    color: #29758a; }
+
+.theme--clear {
+  background: linear-gradient(left bottom, #f7ff00 0%, #207ce5 100%); }
+  .theme--clear .block__title {
+    color: #207ce5; }
+
+.theme--clouds {
+  background: linear-gradient(left bottom, #e2e2e2 0%, #314363 100%); }
+  .theme--clouds .block__title {
+    color: #314363; }
+
+.theme--extreame {
+  background: linear-gradient(left bottom, #000000 0%, #ff0000 100%); }
+  .theme--extreame .block__title {
+    color: #ff0000; }
+
+.theme--additional {
+  background: linear-gradient(left bottom, #636363 0%, #d1d1d1 100%); }
+  .theme--additional .block__title {
+    color: #d1d1d1; }

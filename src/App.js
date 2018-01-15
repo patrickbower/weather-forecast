@@ -11,6 +11,7 @@ import './App.css';
 // componants
 import ForecastContainer from './containers/ForecastContainer';
 import LocationContainer from './containers/LocationContainer';
+import BackgroundContainer from './containers/BackgroundContainer';
 
 class App extends Component {
     constructor(props) {
@@ -76,9 +77,9 @@ class App extends Component {
     }
 
     render() {
-        console.log(this.state);
         return this.state.isLoaded ? (
             <div>
+                <BackgroundContainer data={this.state.data} />
                 <LocationContainer data={this.state.data} />
                 <ForecastContainer data={this.state.data} />
             </div>

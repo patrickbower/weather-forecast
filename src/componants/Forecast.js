@@ -44,7 +44,6 @@ class Forecast extends Component {
     }
 
     render() {
-        console.log(this.props);
         return (
             <div className="container forecast">
                 <div>{this.createBlocks()}</div>
