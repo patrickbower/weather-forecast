@@ -1,27 +1,55 @@
 .weather-item {
-    margin: 20px 0;
+    padding: 0;
 
     &__temp {
-        font-size: 30px;
+        font-size: 10px;
         color: $light-grey;
+        margin-bottom: 0;
     }
 
     &__icon {
-        margin: 15px 0 25px 0;
-
-        &:before {
-            font-size: 45px;
-            color: $dark-grey;
-        }
+        margin-bottom: 5px;
+        color: $dark-grey;
+        font-size: 12px;
     }
 
     &__time {
-        font-size: 30px;
+        font-size: 12px;
         margin-bottom: 0;
         color: $light-grey;
 
         span {
-            font-size: 20px;
+            font-size: 8px;
+        }
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .weather-item {
+        margin: 20px 0;
+
+        &__temp {
+            font-size: 30px;
+            color: $light-grey;
+        }
+
+        &__icon {
+            margin: 15px 0 25px 0;
+
+            &:before {
+                font-size: 45px;
+                color: $dark-grey;
+            }
+        }
+
+        &__time {
+            font-size: 30px;
+            margin-bottom: 0;
+            color: $light-grey;
+
+            span {
+                font-size: 20px;
+            }
         }
     }
 }

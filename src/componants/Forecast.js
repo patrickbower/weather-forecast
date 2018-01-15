@@ -9,8 +9,12 @@ class Forecast extends Component {
                         <div className="row">{this.createNameBlock(day)}</div>
                     </div>
                     <div className="block">
-                        <div className="row justify-content-end">
-                            {this.createWeatherBlock(this.props.weather[day])}
+                        <div className="container">
+                            <div className="row">
+                                {this.createWeatherBlock(
+                                    this.props.weather[day]
+                                )}
+                            </div>
                         </div>
                     </div>
                 </div>

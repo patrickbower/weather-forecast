@@ -1,4 +1,6 @@
-.forecast {
-    margin-right: initial;
-    margin-left: 5%;
+@media only screen and (min-width: 992px) {
+    .forecast {
+        margin-right: initial;
+        margin-left: 0;
+    }
 }
