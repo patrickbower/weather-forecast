@@ -1,5 +1,6 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
+// Each block of weather infomation UI
 class Forecast extends Component {
     createBlocks() {
         return Object.keys(this.props.weather).map((day, index) => {

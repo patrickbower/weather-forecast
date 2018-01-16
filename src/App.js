@@ -1,23 +1,24 @@
-// react
-import React, { Component } from 'react';
+// React
+import React, { Component } from "react";
 
-// utils
-import * as request from './utils/request';
-import axios from 'axios';
-import { CSSTransitionGroup } from 'react-transition-group';
+// Utils
+import * as request from "./utils/request";
+import axios from "axios";
+import { CSSTransitionGroup } from "react-transition-group";
 
-// styles
-import './App.css';
+// Styles
+import "./App.css";
 
-// componants
-import ForecastContainer from './containers/ForecastContainer';
-import BackgroundContainer from './containers/BackgroundContainer';
-import Spinner from './componants/Spinner';
+// Componants
+import ForecastContainer from "./containers/ForecastContainer";
+import BackgroundContainer from "./containers/BackgroundContainer";
+import Spinner from "./componants/Spinner";
 
 class App extends Component {
     constructor(props) {
         super(props);
 
+        // Defualt state.
         this.state = {
             error: null,
             isLoaded: false,
@@ -25,12 +26,15 @@ class App extends Component {
         };
     }
 
+    // Get loctaion, then get correlating data from API.
     componentDidMount() {
+        // Fetch AJAX options.
         const options = {
             enableHighAccuracy: true,
             maximumAge: 30000,
             timeout: 27000
         };
+        // Call back functions as there resolved.
         const getPosition = options => {
             return new Promise(function(resolve, reject) {
                 navigator.geolocation.getCurrentPosition(
@@ -40,21 +44,19 @@ class App extends Component {
                 );
             });
         };
-
+        // Find location.
         getPosition(options)
             .then(position => {
+                // Get correlating data.
                 this.getData(position);
             })
             .catch(error => {
                 this.setState({
-                    isLoaded: true,
                     error
                 });
             });
-
-        this.setState({ mounted: true });
     }
-
+    // Get correlating data.
     getData(position) {
         axios
             .get(
@@ -78,7 +80,8 @@ class App extends Component {
                 }
             );
     }
-
+    // Render loading screen untill location and data resolved
+    // animate contents in.
     render() {
         return this.state.isLoaded ? (
             <div>

@@ -1,5 +1,6 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
+// loading page UI.
 class Spinner extends Component {
     render() {
         return (

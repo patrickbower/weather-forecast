@@ -1,8 +1,7 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
-// import Forecast from '../componants/Location';
-
-class LocationContainer extends Component {
+// Header displaying current location and current weather icon UI.
+class Location extends Component {
     render() {
         return (
             <div className="container-fluid location">
@@ -18,4 +17,4 @@ class LocationContainer extends Component {
     }
 }
 
-export default LocationContainer;
+export default Location;
