@@ -11,6 +11,7 @@ import './App.css';
 // componants
 import ForecastContainer from './containers/ForecastContainer';
 import BackgroundContainer from './containers/BackgroundContainer';
+import Spinner from './componants/Spinner';
 
 class App extends Component {
     constructor(props) {
@@ -83,7 +84,7 @@ class App extends Component {
                 <ForecastContainer data={this.state.data} />
             </div>
         ) : (
-            <div> NOT Ready </div>
+            <Spinner />
         );
     }
 }

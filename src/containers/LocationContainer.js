@@ -7,8 +7,7 @@ class LocationContainer extends Component {
         return (
             <div className="container-fluid location">
                 <h1 className="h5 text-white text-uppercase location__heading">
-                    {`${this.props.data.city.name},
-                        ${this.props.data.city.country}`}
+                    {`${this.props.data.city.name}`}
                 </h1>
                 <i
                     className={`wi wi-owm-day-${this.props

@@ -1,4 +1,7 @@
 .theme {
+    min-height: 100vh;
+    background: linear-gradient(to left bottom, #fecb00 0%, #999 100%);
+
     &--thunderstorm {
         background: linear-gradient(to left bottom, #01074a 0%, #f1e767 100%);
 
