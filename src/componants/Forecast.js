@@ -6,7 +6,9 @@ class Forecast extends Component {
             return (
                 <div key={index}>
                     <div className="block">
-                        <div className="row">{this.createNameBlock(day)}</div>
+                        <div className="row">
+                            {this.createNameBlock(day, index)}
+                        </div>
                     </div>
                     <div className="block">
                         <div className="container">
@@ -22,8 +24,16 @@ class Forecast extends Component {
         });
     }
 
-    createNameBlock(day) {
-        return <h2 className="block__title text-uppercase mb-0">{day}</h2>;
+    createNameBlock(day, index) {
+        if (index === 0) {
+            return <h2 className="block__title text-uppercase mb-0">today</h2>;
+        } else if (index === 1) {
+            return (
+                <h2 className="block__title text-uppercase mb-0">tommrow</h2>
+            );
+        } else {
+            return <h2 className="block__title text-uppercase mb-0">{day}</h2>;
+        }
     }
 
     createWeatherBlock(weather) {

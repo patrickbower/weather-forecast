@@ -1,9 +1,10 @@
 .theme {
     min-height: 100vh;
-    background: linear-gradient(to left bottom, #fecb00 0%, #999 100%);
+    // background: linear-gradient(to left bottom, #fecb00 0%, #999 100%);
+    background: #999;
 
     &--thunderstorm {
-        background: linear-gradient(to left bottom, #01074a 0%, #f1e767 100%);
+        background: linear-gradient(to left bottom, #01074a 0%, #e2e2e2 100%);
 
         .block__title {
             color: #01074a;
@@ -11,7 +12,7 @@
     }
 
     &--drizzle {
-        background: linear-gradient(to left bottom, #005dba 0%, #9fc4e6 100%);
+        background: linear-gradient(to left bottom, #005dba 0%, #e2e2e2 100%);
 
         .block__title {
             color: #005dba;
@@ -19,7 +20,7 @@
     }
 
     &--rain {
-        background: linear-gradient(to left bottom, #003369 0%, #499bea 100%);
+        background: linear-gradient(to left bottom, #003369 0%, #e2e2e2 100%);
 
         .block__title {
             color: #003369;
@@ -27,7 +28,7 @@
     }
 
     &--snow {
-        background: linear-gradient(to left bottom, #e2e2e2 0%, #fefefe 100%);
+        background: linear-gradient(to left bottom, #e2e2e2 0%, #e2e2e2 100%);
 
         .block__title {
             color: #e2e2e2;
@@ -35,7 +36,7 @@
     }
 
     &--atmosphere {
-        background: linear-gradient(to left bottom, #29758a 0%, #93cede 100%);
+        background: linear-gradient(to left bottom, #29758a 0%, #e2e2e2 100%);
 
         .block__title {
             color: #29758a;
@@ -43,7 +44,7 @@
     }
 
     &--clear {
-        background: linear-gradient(to left bottom, #207ce5 0%, #f7ff00 100%);
+        background: linear-gradient(to left bottom, #207ce5 0%, #e2e2e2 100%);
 
         .block__title {
             color: #207ce5;
@@ -59,7 +60,7 @@
     }
 
     &--extreame {
-        background: linear-gradient(to left bottom, #ff0000 0%, #000000 100%);
+        background: linear-gradient(to left bottom, #ff0000 0%, #e2e2e2 100%);
 
         .block__title {
             color: #ff0000;
@@ -67,7 +68,7 @@
     }
 
     &--additional {
-        background: linear-gradient(to left bottom, #d1d1d1 0%, #636363 100%);
+        background: linear-gradient(to left bottom, #d1d1d1 0%, #e2e2e2 100%);
 
         .block__title {
             color: #d1d1d1;

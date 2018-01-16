@@ -6012,6 +6012,13 @@ body {
   padding: 0 20px 20px 20px;
   background: #999; }
 
+.fade-in {
+  opacity: 0;
+  transition: all 2s ease-in; }
+
+.fade-in.fade-in-active {
+  opacity: 1; }
+
 .block {
   background: #ffffff;
   padding: 5px;
@@ -6097,29 +6104,29 @@ body {
 
 .theme {
   min-height: 100vh;
-  background: linear-gradient(to left bottom, #fecb00 0%, #999 100%); }
+  background: #999; }
   .theme--thunderstorm {
-    background: linear-gradient(to left bottom, #01074a 0%, #f1e767 100%); }
+    background: linear-gradient(to left bottom, #01074a 0%, #e2e2e2 100%); }
     .theme--thunderstorm .block__title {
       color: #01074a; }
   .theme--drizzle {
-    background: linear-gradient(to left bottom, #005dba 0%, #9fc4e6 100%); }
+    background: linear-gradient(to left bottom, #005dba 0%, #e2e2e2 100%); }
     .theme--drizzle .block__title {
       color: #005dba; }
   .theme--rain {
-    background: linear-gradient(to left bottom, #003369 0%, #499bea 100%); }
+    background: linear-gradient(to left bottom, #003369 0%, #e2e2e2 100%); }
     .theme--rain .block__title {
       color: #003369; }
   .theme--snow {
-    background: linear-gradient(to left bottom, #e2e2e2 0%, #fefefe 100%); }
+    background: linear-gradient(to left bottom, #e2e2e2 0%, #e2e2e2 100%); }
     .theme--snow .block__title {
       color: #e2e2e2; }
   .theme--atmosphere {
-    background: linear-gradient(to left bottom, #29758a 0%, #93cede 100%); }
+    background: linear-gradient(to left bottom, #29758a 0%, #e2e2e2 100%); }
     .theme--atmosphere .block__title {
       color: #29758a; }
   .theme--clear {
-    background: linear-gradient(to left bottom, #207ce5 0%, #f7ff00 100%); }
+    background: linear-gradient(to left bottom, #207ce5 0%, #e2e2e2 100%); }
     .theme--clear .block__title {
       color: #207ce5; }
   .theme--clouds {
@@ -6127,11 +6134,11 @@ body {
     .theme--clouds .block__title {
       color: #314363; }
   .theme--extreame {
-    background: linear-gradient(to left bottom, #ff0000 0%, #000000 100%); }
+    background: linear-gradient(to left bottom, #ff0000 0%, #e2e2e2 100%); }
     .theme--extreame .block__title {
       color: #ff0000; }
   .theme--additional {
-    background: linear-gradient(to left bottom, #d1d1d1 0%, #636363 100%); }
+    background: linear-gradient(to left bottom, #d1d1d1 0%, #e2e2e2 100%); }
     .theme--additional .block__title {
       color: #d1d1d1; }
 
@@ -6168,3 +6175,12 @@ body {
   100% {
     transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
     -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg); } }
+
+.fadein-appear .block {
+  opacity: 0;
+  margin-top: -100vh;
+  transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1); }
+
+.fadein-appear.fadein-appear-active .block {
+  margin-top: 0;
+  opacity: 1; }

@@ -1,0 +1,10 @@
+.fadein-appear .block {
+    opacity: 0;
+    margin-top: -100vh;
+    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.fadein-appear.fadein-appear-active .block {
+    margin-top: 0;
+    opacity: 1;
+}

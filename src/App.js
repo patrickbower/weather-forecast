@@ -4,6 +4,7 @@ import React, { Component } from 'react';
 // utils
 import * as request from './utils/request';
 import axios from 'axios';
+import { CSSTransitionGroup } from 'react-transition-group';
 
 // styles
 import './App.css';
@@ -50,6 +51,8 @@ class App extends Component {
                     error
                 });
             });
+
+        this.setState({ mounted: true });
     }
 
     getData(position) {
@@ -79,9 +82,16 @@ class App extends Component {
     render() {
         return this.state.isLoaded ? (
             <div>
-                <BackgroundContainer data={this.state.data} />
-
-                <ForecastContainer data={this.state.data} />
+                <CSSTransitionGroup
+                    transitionName="fadein"
+                    transitionAppear={true}
+                    transitionAppearTimeout={1000}
+                    transitionEnterTimeout={0}
+                    transitionLeaveTimeout={0}
+                >
+                    <BackgroundContainer data={this.state.data} key="1" />
+                    <ForecastContainer data={this.state.data} key="2" />
+                </CSSTransitionGroup>
             </div>
         ) : (
             <Spinner />
