@@ -6007,10 +6007,11 @@ a.text-dark:focus, a.text-dark:hover {
   max-width: 12.5%; }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 600;
   padding: 0 20px 20px 20px;
-  background: #999; }
+  background: #999;
+  min-width: 320px; }
 
 .fade-in {
   opacity: 0;
@@ -6038,19 +6039,19 @@ body {
 .weather-item {
   padding: 0; }
   .weather-item__temp {
-    font-size: 10px;
+    font-size: 14px;
     color: #b3b3b3;
     margin-bottom: 0; }
   .weather-item__icon {
     margin-bottom: 5px;
     color: #666666;
-    font-size: 12px; }
+    font-size: 16px; }
   .weather-item__time {
-    font-size: 12px;
+    font-size: 16px;
     margin-bottom: 0;
     color: #b3b3b3; }
     .weather-item__time span {
-      font-size: 8px; }
+      font-size: 10px; }
 
 @media only screen and (min-width: 992px) {
   .weather-item {
@@ -6091,7 +6092,8 @@ body {
     .location__heading {
       font-weight: 300;
       letter-spacing: 10px;
-      transform: translateY(100px); }
+      transform: translateY(100px);
+      margin-right: 100px; }
     .location__icon {
       color: #ffffff;
       font-size: 160px;

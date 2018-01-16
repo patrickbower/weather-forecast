@@ -28,12 +28,13 @@ class App extends Component {
 
     // Get loctaion, then get correlating data from API.
     componentDidMount() {
-        // Fetch AJAX options.
+        // Fetch options.
         const options = {
             enableHighAccuracy: true,
             maximumAge: 30000,
             timeout: 27000
         };
+
         // Call back functions as there resolved.
         const getPosition = options => {
             return new Promise(function(resolve, reject) {
@@ -44,6 +45,7 @@ class App extends Component {
                 );
             });
         };
+
         // Find location.
         getPosition(options)
             .then(position => {
@@ -56,6 +58,7 @@ class App extends Component {
                 });
             });
     }
+
     // Get correlating data.
     getData(position) {
         axios
@@ -80,6 +83,7 @@ class App extends Component {
                 }
             );
     }
+
     // Render loading screen untill location and data resolved
     // animate contents in.
     render() {
