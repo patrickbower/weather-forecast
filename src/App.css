@@ -6095,47 +6095,76 @@ body {
     margin-right: initial;
     margin-left: 0; } }
 
-.theme--thunderstorm {
-  background: linear-gradient(to left bottom, #01074a 0%, #f1e767 100%); }
-  .theme--thunderstorm .block__title {
-    color: #01074a; }
+.theme {
+  min-height: 100vh;
+  background: linear-gradient(to left bottom, #fecb00 0%, #999 100%); }
+  .theme--thunderstorm {
+    background: linear-gradient(to left bottom, #01074a 0%, #f1e767 100%); }
+    .theme--thunderstorm .block__title {
+      color: #01074a; }
+  .theme--drizzle {
+    background: linear-gradient(to left bottom, #005dba 0%, #9fc4e6 100%); }
+    .theme--drizzle .block__title {
+      color: #005dba; }
+  .theme--rain {
+    background: linear-gradient(to left bottom, #003369 0%, #499bea 100%); }
+    .theme--rain .block__title {
+      color: #003369; }
+  .theme--snow {
+    background: linear-gradient(to left bottom, #e2e2e2 0%, #fefefe 100%); }
+    .theme--snow .block__title {
+      color: #e2e2e2; }
+  .theme--atmosphere {
+    background: linear-gradient(to left bottom, #29758a 0%, #93cede 100%); }
+    .theme--atmosphere .block__title {
+      color: #29758a; }
+  .theme--clear {
+    background: linear-gradient(to left bottom, #207ce5 0%, #f7ff00 100%); }
+    .theme--clear .block__title {
+      color: #207ce5; }
+  .theme--clouds {
+    background: linear-gradient(to left bottom, #314363 0%, #e2e2e2 100%); }
+    .theme--clouds .block__title {
+      color: #314363; }
+  .theme--extreame {
+    background: linear-gradient(to left bottom, #ff0000 0%, #000000 100%); }
+    .theme--extreame .block__title {
+      color: #ff0000; }
+  .theme--additional {
+    background: linear-gradient(to left bottom, #d1d1d1 0%, #636363 100%); }
+    .theme--additional .block__title {
+      color: #d1d1d1; }
 
-.theme--drizzle {
-  background: linear-gradient(to left bottom, #005dba 0%, #9fc4e6 100%); }
-  .theme--drizzle .block__title {
-    color: #005dba; }
+.loading {
+  text-align: center; }
+  .loading__text {
+    color: #ffffff;
+    letter-spacing: 10px;
+    padding-top: 200px; }
+  .loading__spinner {
+    width: 100px;
+    height: 100px;
+    background-color: #ffffff;
+    opacity: 0.25;
+    margin: -70px auto;
+    -webkit-animation: rotateBox 1.2s infinite ease-in-out;
+    animation: rotateBox 1.2s infinite ease-in-out; }
 
-.theme--rain {
-  background: linear-gradient(to left bottom, #003369 0%, #499bea 100%); }
-  .theme--rain .block__title {
-    color: #003369; }
+@-webkit-keyframes rotateBox {
+  0% {
+    -webkit-transform: perspective(120px); }
+  50% {
+    -webkit-transform: perspective(120px) rotateY(180deg); }
+  100% {
+    -webkit-transform: perspective(120px) rotateY(180deg) rotateX(180deg); } }
 
-.theme--snow {
-  background: linear-gradient(to left bottom, #e2e2e2 0%, #fefefe 100%); }
-  .theme--snow .block__title {
-    color: #e2e2e2; }
-
-.theme--atmosphere {
-  background: linear-gradient(to left bottom, #29758a 0%, #93cede 100%); }
-  .theme--atmosphere .block__title {
-    color: #29758a; }
-
-.theme--clear {
-  background: linear-gradient(to left bottom, #207ce5 0%, #f7ff00 100%); }
-  .theme--clear .block__title {
-    color: #207ce5; }
-
-.theme--clouds {
-  background: linear-gradient(to left bottom, #314363 0%, #e2e2e2 100%); }
-  .theme--clouds .block__title {
-    color: #314363; }
-
-.theme--extreame {
-  background: linear-gradient(to left bottom, #ff0000 0%, #000000 100%); }
-  .theme--extreame .block__title {
-    color: #ff0000; }
-
-.theme--additional {
-  background: linear-gradient(to left bottom, #d1d1d1 0%, #636363 100%); }
-  .theme--additional .block__title {
-    color: #d1d1d1; }
+@keyframes rotateBox {
+  0% {
+    transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+    -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg); }
+  50% {
+    transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+    -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg); }
+  100% {
+    transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+    -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg); } }
