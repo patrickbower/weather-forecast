@@ -18,6 +18,8 @@ class BackgroundContainer extends Component {
         this.setState({
             currentWeatherType: this.sortWeatherType(currentWeatherId)
         });
+
+        console.log(currentWeatherId, this.sortWeatherType(currentWeatherId));
     }
 
     // Filter weather type by OWM condition id
@@ -33,7 +35,7 @@ class BackgroundContainer extends Component {
                 return "snow";
             case currentWeatherId <= 781:
                 return "atmosphere";
-            case 800:
+            case currentWeatherId < 801:
                 return "clear";
             case currentWeatherId <= 804:
                 return "clouds";

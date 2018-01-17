@@ -6128,9 +6128,9 @@ body {
     .theme--atmosphere .block__title {
       color: #29758a; }
   .theme--clear {
-    background: linear-gradient(to left bottom, #207ce5 0%, #e2e2e2 100%); }
+    background: linear-gradient(to left bottom, #fecb00 0%, #e2e2e2 100%); }
     .theme--clear .block__title {
-      color: #207ce5; }
+      color: #fecb00; }
   .theme--clouds {
     background: linear-gradient(to left bottom, #314363 0%, #e2e2e2 100%); }
     .theme--clouds .block__title {

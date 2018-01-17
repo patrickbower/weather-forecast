@@ -1,9 +1,15 @@
 .theme {
+    $base-grey: #e2e2e2;
+
     min-height: 100vh;
     background: #999;
 
     &--thunderstorm {
-        background: linear-gradient(to left bottom, #01074a 0%, #e2e2e2 100%);
+        background: linear-gradient(
+            to left bottom,
+            #01074a 0%,
+            $base-grey 100%
+        );
 
         .block__title {
             color: #01074a;
@@ -11,7 +17,11 @@
     }
 
     &--drizzle {
-        background: linear-gradient(to left bottom, #005dba 0%, #e2e2e2 100%);
+        background: linear-gradient(
+            to left bottom,
+            #005dba 0%,
+            $base-grey 100%
+        );
 
         .block__title {
             color: #005dba;
@@ -19,7 +29,11 @@
     }
 
     &--rain {
-        background: linear-gradient(to left bottom, #003369 0%, #e2e2e2 100%);
+        background: linear-gradient(
+            to left bottom,
+            #003369 0%,
+            $base-grey 100%
+        );
 
         .block__title {
             color: #003369;
@@ -27,15 +41,23 @@
     }
 
     &--snow {
-        background: linear-gradient(to left bottom, #e2e2e2 0%, #e2e2e2 100%);
+        background: linear-gradient(
+            to left bottom,
+            $base-grey 0%,
+            $base-grey 100%
+        );
 
         .block__title {
-            color: #e2e2e2;
+            color: $base-grey;
         }
     }
 
     &--atmosphere {
-        background: linear-gradient(to left bottom, #29758a 0%, #e2e2e2 100%);
+        background: linear-gradient(
+            to left bottom,
+            #29758a 0%,
+            $base-grey 100%
+        );
 
         .block__title {
             color: #29758a;
@@ -43,15 +65,23 @@
     }
 
     &--clear {
-        background: linear-gradient(to left bottom, #207ce5 0%, #e2e2e2 100%);
+        background: linear-gradient(
+            to left bottom,
+            #fecb00 0%,
+            $base-grey 100%
+        );
 
         .block__title {
-            color: #207ce5;
+            color: #fecb00;
         }
     }
 
     &--clouds {
-        background: linear-gradient(to left bottom, #314363 0%, #e2e2e2 100%);
+        background: linear-gradient(
+            to left bottom,
+            #314363 0%,
+            $base-grey 100%
+        );
 
         .block__title {
             color: #314363;
@@ -59,7 +89,11 @@
     }
 
     &--extreame {
-        background: linear-gradient(to left bottom, #ff0000 0%, #e2e2e2 100%);
+        background: linear-gradient(
+            to left bottom,
+            #ff0000 0%,
+            $base-grey 100%
+        );
 
         .block__title {
             color: #ff0000;
@@ -67,7 +101,11 @@
     }
 
     &--additional {
-        background: linear-gradient(to left bottom, #d1d1d1 0%, #e2e2e2 100%);
+        background: linear-gradient(
+            to left bottom,
+            #d1d1d1 0%,
+            $base-grey 100%
+        );
 
         .block__title {
             color: #d1d1d1;
