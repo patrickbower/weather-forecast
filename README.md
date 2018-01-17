@@ -2,7 +2,8 @@
 
 A single responsive HTML page displaying a 5 day weather forecast
 
-
+**Live demo**
+https://patrickbower.github.io/weather-forecast/
 
 ## How to build and run
 
@@ -31,7 +32,7 @@ A custom stack built on a base from create-react-appReact:
 
 **Use appropriate technology**
 
-Approached as a prototype, the design and development had a brief discovery phase. A few concepts took shape from research and exploring the API. 
+Approached as a prototype, the design and development had a brief discovery phase. A few concepts took shape from research and exploring the API.
 
 **UI should be unambiguous**
 
